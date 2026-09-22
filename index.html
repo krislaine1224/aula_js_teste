@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula de Js</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Simples</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script sc="main.js"></script>
+
+  <div class="calculator">
+    <!-- Visor da Calculadora -->
+    <div class="display">
+      <input type="text" id="display" readonly placeholder="0">
+    </div>
+
+    <!-- Teclado de Botões -->
+    <div class="buttons">
+      <!-- Linha 1 -->
+      <button class="btn btn-clear" id="btn-clear">C</button>
+      <button class="btn btn-operator" id="btn-delete">⌫</button>
+      <button class="btn btn-operator" id="btn-divide">÷</button>
+
+      <!-- Linha 2 -->
+      <button class="btn btn-num" id="btn-7">7</button>
+      <button class="btn btn-num" id="btn-8">8</button>
+      <button class="btn btn-num" id="btn-9">9</button>
+      <button class="btn btn-operator" id="btn-multiply">×</button>
+
+      <!-- Linha 3 -->
+      <button class="btn btn-num" id="btn-4">4</button>
+      <button class="btn btn-num" id="btn-5">5</button>
+      <button class="btn btn-num" id="btn-6">6</button>
+      <button class="btn btn-operator" id="btn-subtract">-</button>
+
+      <!-- Linha 4 -->
+      <button class="btn btn-num" id="btn-1">1</button>
+      <button class="btn btn-num" id="btn-2">2</button>
+      <button class="btn btn-num" id="btn-3">3</button>
+      <button class="btn btn-operator" id="btn-add">+</button>
+
+      <!-- Linha 5 -->
+      <button class="btn btn-num btn-zero" id="btn-0">0</button>
+      <button class="btn btn-num" id="btn-decimal">,</button>
+      <button class="btn btn-equal" id="btn-equal">=</button>
+    </div>
+  </div>
+
+  <!-- Seu arquivo JS será importado aqui -->
+  <script src="main.js"></script>
 </body>
 </html>
